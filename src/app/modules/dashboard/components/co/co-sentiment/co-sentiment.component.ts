@@ -15,7 +15,7 @@ export class CoSentimentComponent implements OnInit, OnDestroy {
     this.chartOptions = {
       series: [
         {
-          name: 'Categories',
+          name: 'Reviews',
           data: [
             {
               x: "Positive",
@@ -63,9 +63,9 @@ export class CoSentimentComponent implements OnInit, OnDestroy {
         formatter: function(val, opt) {
             return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
         },
-        offsetY: 8,
+        offsetY: 0,
         style: {
-          fontSize: '22px',
+          fontSize: '1.5em',
         },
         dropShadow: {
             enabled: true,
