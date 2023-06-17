@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { SmsComponent } from './pages/sms/sms.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard.component';
@@ -18,6 +17,7 @@ import { NftAuctionsTableItemComponent } from './components/nft/nft-auctions-tab
 import { BoComponent } from './pages/bo/bo.component';
 import { CpComponent } from './pages/cp/cp.component';
 import { CoComponent } from './pages/co/co.component';
+import { SmsComponent } from './pages/sms/sms.component';
 
 @NgModule({
   declarations: [
