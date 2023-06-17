@@ -2,21 +2,19 @@
     <div class="mb-2 flex items-center justify-between">
         <div class="flex-col">
             <div class="flex items-center space-x-1">
-                <span class="text-4xl font-semibold text-gray-900 dark:text-white">Total Customer Reviews By Mood</span>
+                <span class="text-4xl mb-10 font-semibold text-gray-900 dark:text-white">Total Customer Reviews By
+                    Mood</span>
             </div>
-            <span class="text-sm text-gray-400 dark:text-night-300">Etherium rate</span>
-        </div>
-        <div
-            class="cursor-pointer rounded-sm bg-gray-100 px-1 py-1 text-center text-xs text-gray-500 hover:bg-primary-500/25 hover:text-primary-500 dark:bg-night-500 dark:text-night-300 dark:hover:bg-primary-500/25 dark:hover:text-primary-500">
-            <svg-icon src="assets/icons/outline/dots-horizontal.svg" [svgClass]="'h-3 w-3'"></svg-icon>
         </div>
     </div>
     <!-- Card Body -->
-    <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!" [legend]="chartOptions.legend!"
-        [dataLabels]="chartOptions.dataLabels!" [fill]="chartOptions.fill!" [stroke]="chartOptions.stroke!"
-        [xaxis]="chartOptions.xaxis!" [yaxis]="chartOptions.yaxis!" [states]="chartOptions.states!"
-        [tooltip]="chartOptions.tooltip!" [colors]="chartOptions.colors!" [grid]="chartOptions.grid!"
-        [title]="chartOptions.title!">
-    </apx-chart>
+    <div style="padding: 20px; margin: 5px;">
+        <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!" [legend]="chartOptions.legend!"
+            [dataLabels]="chartOptions.dataLabels!" [fill]="chartOptions.fill!" [stroke]="chartOptions.stroke!"
+            [xaxis]="chartOptions.xaxis!" [yaxis]="chartOptions.yaxis!" [states]="chartOptions.states!"
+            [tooltip]="chartOptions.tooltip!" [colors]="chartOptions.colors!" [grid]="chartOptions.grid!"
+            [title]="chartOptions.title!">
+        </apx-chart>
+    </div>
     <!-- end Chart -->
 </div>
