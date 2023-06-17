@@ -12,79 +12,96 @@ export class CoSentimentComponent implements OnInit, OnDestroy {
   private subscription: Subscription = new Subscription();
 
   constructor(private themeService: ThemeService) {
-    const baseColor = '#7239ea';
-    const data = [2100, 3200, 3200, 2400, 2400, 1800, 1800, 2400, 2400, 3200, 3200, 3000, 3000, 3250, 3250];
-    const categories = [
-      '10AM',
-      '10.30AM',
-      '11AM',
-      '11.15AM',
-      '11.30AM',
-      '12PM',
-      '1PM',
-      '2PM',
-      '3PM',
-      '4PM',
-      '5PM',
-      '6PM',
-      '7PM',
-      '8PM',
-      '9PM',
-    ];
-
     this.chartOptions = {
       series: [
         {
-          name: 'Etherium',
-          data: data,
-        },
+          name: 'Categories',
+          data: [
+            {
+              x: "Positive",
+              y: 500,
+              fillColor: "#28E3A1",         
+            },
+            {
+              x: "Neutral",
+              y: 300,
+              fillColor: "#FEB019",
+              
+            },
+            {
+              x: "Negative",
+              y: 100,
+              fillColor: "#FC5B5B",    
+              
+            }
+          ]
+        }
       ],
+      
       chart: {
         fontFamily: 'inherit',
-        type: 'bar', // Change chart type to 'bar'
-        height: 150,
+        type: 'bar',
+        height: 300,
+        width: '95%',
         toolbar: {
-          show: false,
+          show: true,
         },
         sparkline: {
-          enabled: true,
+          enabled: false,
         },
+        
       },
       plotOptions: {
         bar: {
-          columnWidth: '45%', // Adjust the width of the bars
+          columnWidth: '50%',
+          distributed: true, 
         },
+        
       },
       dataLabels: {
-        enabled: false,
-      },
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shadeIntensity: 1,
-          opacityFrom: 0.4,
-          opacityTo: 0.2,
-          stops: [15, 120, 100],
+        enabled: true,
+        formatter: function(val, opt) {
+            return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
         },
+        offsetY: 8,
+        style: {
+          fontSize: '22px',
+        },
+        dropShadow: {
+            enabled: true,
+            left: 3,
+            top: 2,
+            opacity: 0.5
+        }
       },
       xaxis: {
-        categories: categories,
         labels: {
-          show: true, // Set show labels to true
+          show: false,
         },
-        tooltip: {
-          enabled: false, // Disable tooltip for x-axis labels
+      },
+      yaxis: {
+        labels: {
+          show: true,
         },
       },
       tooltip: {
+        enabled: true,
         theme: 'light',
-        y: {
-          formatter: function (val) {
-            return val + '$';
-          },
+        style: {
+          fontSize: '35px',
         },
       },
-      colors: [baseColor], // Bar color
+      
+      legend: {
+        position: 'top',
+        show: true,
+        fontSize: '22px',
+        showForSingleSeries: true,
+        customLegendItems: ["Positive", "Neutral", "Negative"],
+        markers: {
+          fillColors: ["#28E3A1","#FEB019", "#FC5B5B"]
+        }
+      }
     };
   }
 
