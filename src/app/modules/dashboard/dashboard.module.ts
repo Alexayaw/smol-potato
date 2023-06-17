@@ -20,6 +20,7 @@ import { CoComponent } from './pages/co/co.component';
 import { SmsComponent } from './pages/sms/sms.component';
 import { CoHeaderComponent } from './components/co/co-header/co-header.component';
 import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
+import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.
     CoComponent,
     CoHeaderComponent,
     CoSentimentComponent,
+    CoWordcloudComponent,
   ],
   imports: [
     CommonModule,
