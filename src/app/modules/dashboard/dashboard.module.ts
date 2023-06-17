@@ -15,6 +15,9 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { NftHeaderComponent } from './components/nft/nft-header/nft-header.component';
 import { NftAuctionsTableComponent } from './components/nft/nft-auctions-table/nft-auctions-table.component';
 import { NftAuctionsTableItemComponent } from './components/nft/nft-auctions-table-item/nft-auctions-table-item.component';
+import { BoComponent } from './pages/bo/bo.component';
+import { CpComponent } from './pages/cp/cp.component';
+import { CoComponent } from './pages/co/co.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { NftAuctionsTableItemComponent } from './components/nft/nft-auctions-tab
     NftHeaderComponent,
     NftAuctionsTableComponent,
     NftAuctionsTableItemComponent,
+    BoComponent,
+    CpComponent,
+    CoComponent,
   ],
   imports: [
     CommonModule,

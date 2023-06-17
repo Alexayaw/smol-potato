@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { NftComponent } from './pages/nft/nft.component';
+import { BoComponent } from './pages/bo/bo.component';
+import { CoComponent } from './pages/co/co.component';
+import { CpComponent } from './pages/cp/cp.component';
 
 const routes: Routes = [
   {
@@ -10,6 +13,9 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'nfts', pathMatch: 'full' },
       { path: 'nfts', component: NftComponent },
+      { path: 'bo', component: BoComponent },
+      { path: 'co', component: CoComponent },
+      { path: 'cp', component: CpComponent },
       { path: '**', redirectTo: 'error/404' },
     ],
   },
