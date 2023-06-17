@@ -1,6 +1,13 @@
 <div class="mx-auto px-4 py-4 sm:px-8 lg:container">
     <!-- Header -->
-    <app-nft-header></app-nft-header>
+    <app-co-header></app-co-header>
     <!-- end Header -->
-  
-<h1>This is Customer opinion</h1>
+
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+        <!-- Bar Card -->
+        <div co-sentiment-chart-card class="md:col-span-2 lg:col-span-2 xl:col-span-2"></div>
+
+        <!-- Pie Card -->
+        <div co-sentiment-chart-card class="md:col-span-1 lg:col-span-1 xl:col-span-1"></div>
+    </div>
+</div>
