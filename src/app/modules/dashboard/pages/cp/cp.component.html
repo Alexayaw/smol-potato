@@ -2,11 +2,22 @@
     <!-- Header -->
     <app-nft-header></app-nft-header>
     <!-- end Header -->
-
     <div class="grid grid-cols-2 grid-rows-3 gap-4">
-        <div class="col-span-2 flex-col bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">1</div>
-        <div class="col-span-2 flex-col bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">3</div>
-        <div class=" flex-col md:col-span-1 sm:col-span-2 bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">4</div>
-        <div class="r flex-col md:col-span-1 sm:col-span-2 bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">5</div>
+        <div  class="col-span-2 flex-col bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">
+        <app-age-bar-chart></app-age-bar-chart>
+        </div>
+
+        <div class="col-span-2 flex-col bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">
+        <app-avg-cus-pm></app-avg-cus-pm>
+        </div>
+
+        <div class="col-span-2 flex-col md:col-span-1 sm:col-span-2 bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">
+            <app-gender-donut></app-gender-donut>
+        </div>
+
+        <div class="col-span-2 flex-col md:col-span-1 sm:col-span-2 bg-white flex round-lg dark:bg-night-700 dark:text-white justify-center items-center">
+            5
+        </div>
     </div>
-</div>
+
+  
