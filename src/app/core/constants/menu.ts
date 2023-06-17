@@ -9,21 +9,21 @@ export class Menu {
         {
           icon: 'assets/icons/outline/chart-pie.svg',
           label: 'Social Media Stats',
-          route: '/dashboard'
+          route: '/dashboard/nfts'
         },        {
           icon: 'assets/icons/outline/download.svg',
           label: 'Business Overview',
-          route: '/download',
+          route: '/dashboard/bo',
         },
         {
           icon: 'assets/icons/outline/gift.svg',
           label: 'Customer Profiles',
-          route: '/gift',
+          route: '/dashboard/cp',
         },
         {
           icon: 'assets/icons/outline/users.svg',
           label: 'Customer Opinions',
-          route: '/users',
+          route: '/dashboard/co',
         },
       ],
     },
