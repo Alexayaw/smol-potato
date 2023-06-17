@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Nft } from '../../models/nft';
 
 @Component({
-  selector: 'app-nft',
-  templateUrl: './nft.component.html',
+  selector: 'app-sms',
+  templateUrl: './sms.component.html',
 })
-export class NftComponent implements OnInit {
+export class SmsComponent implements OnInit {
   nft: Array<Nft>;
 
   constructor() {
