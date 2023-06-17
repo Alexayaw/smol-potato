@@ -19,6 +19,7 @@ import { BoComponent } from './pages/bo/bo.component';
 import { CpComponent } from './pages/cp/cp.component';
 import { CoComponent } from './pages/co/co.component';
 
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -31,7 +32,7 @@ import { CoComponent } from './pages/co/co.component';
     NftAuctionsTableItemComponent,
     BoComponent,
     CpComponent,
-    CoComponent,
+    CoComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +41,7 @@ import { CoComponent } from './pages/co/co.component';
     HttpClientModule,
     NgApexchartsModule,
     AngularSvgIconModule.forRoot(),
+    
   ],
 })
 export class DashboardModule {}
