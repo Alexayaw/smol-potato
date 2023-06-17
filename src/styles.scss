@@ -48,3 +48,9 @@
 
 /** Plugins **/
 @import './assets/styles/apexchart.scss';
+
+$font-weight-700: 700;
+
+.chart-title {
+  font-weight: $font-weight-700;
+}

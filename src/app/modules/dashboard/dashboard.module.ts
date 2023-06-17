@@ -20,7 +20,7 @@ import { CoComponent } from './pages/co/co.component';
 import { SmsComponent } from './pages/sms/sms.component';
 import { CoHeaderComponent } from './components/co/co-header/co-header.component';
 import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
-import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
+import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.
     CoComponent,
     CoHeaderComponent,
     CoSentimentComponent,
-    CoWordcloudComponent,
+    AgeBarChartComponent,
   ],
   imports: [
     CommonModule,
