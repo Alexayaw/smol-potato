@@ -54,3 +54,21 @@ $font-weight-700: 700;
 .chart-title {
   font-weight: $font-weight-700;
 }
+
+.display-card {
+
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: white;
+	padding: 30px;
+
+  }
+
+  .figures {
+	padding-top: 8px;
+	font-size: 30px;
+	font-weight: 700;
+	color: #111827;
+  }
