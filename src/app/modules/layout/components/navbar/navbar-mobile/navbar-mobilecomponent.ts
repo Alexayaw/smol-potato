@@ -10,7 +10,6 @@ import { MenuService } from '../../../services/menu.service';
 })
 export class NavbarMobileComponent implements OnInit {
   public showMobileMenu$: Observable<boolean> = new Observable<boolean>();
-
   constructor(private menuService: MenuService) {
     this.showMobileMenu$ = this.menuService.showMobileMenu$;
   }
