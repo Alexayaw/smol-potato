@@ -13,29 +13,21 @@ export class NftChartCardComponent implements OnInit, OnDestroy {
 
   constructor(private themeService: ThemeService) {
     const baseColor = '#7239ea';
-    const data = [2100, 3200, 3200, 2400, 2400, 1800, 1800, 2400, 2400, 3200, 3200, 3000, 3000, 3250, 3250];
+    const data = [2100, 3200, 3200, 2400, 2400, 1800, 1800];
     const categories = [
-      '10AM',
-      '10.30AM',
-      '11AM',
-      '11.15AM',
-      '11.30AM',
-      '12PM',
-      '1PM',
-      '2PM',
-      '3PM',
-      '4PM',
-      '5PM',
-      '6PM',
-      '7PM',
-      '8PM',
-      '9PM',
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'July',
     ];
 
     this.chartOptions = {
       series: [
         {
-          name: 'Etherium',
+          name: 'Sales Per Month',
           data: data,
         },
       ],

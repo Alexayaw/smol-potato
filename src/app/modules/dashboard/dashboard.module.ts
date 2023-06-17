@@ -25,7 +25,8 @@ import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart
 import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
 import { GenderDonutComponent } from './components/customerProfile/gender-donut/gender-donut.component';
 import { TopCustomerComponent } from './components/customerprofile/top-customer/top-customer.component';
-
+import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
+import { BoHeaderComponent } from './components/bo-header/bo-header.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -46,6 +47,8 @@ import { TopCustomerComponent } from './components/customerprofile/top-customer/
     AvgCusPmComponent,
     GenderDonutComponent,
     TopCustomerComponent,
+    BoAvgOrderChartComponent,
+    BoHeaderComponent,
   ],
   imports: [
     CommonModule,
