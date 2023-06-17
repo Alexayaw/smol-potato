@@ -1,4 +1,4 @@
-<!-- <div class="flex-col rounded-lg bg-white px-8 py-8 dark:bg-night-700 sm:flex-row">
+<div class="flex-col rounded-lg bg-white px-8 py-8 dark:bg-night-700 sm:flex-row">
     <div class="mb-2 flex items-center justify-between">
         <div class="flex-col">
             <div class="flex items-center space-x-1">
@@ -7,6 +7,84 @@
             </div>
         </div>
     </div>
-    <div id="container"></div>
-</div> -->
-<div #wordcloud></div>
+    <!-- Card Body -->
+    <div style="padding: 20px; margin: 5px;">
+
+    </div>
+    <!-- end Chart -->
+</div>
+<!-- <div id="wordcloud"></div>
+<style>
+    #wordcloud {
+        width: 100%;
+        height: 100vh;
+    }
+</style>
+<script>
+    // Sample data
+    var data = [
+        { phrase: "Great product", count: 5 },
+        { phrase: "Excellent service", count: 7 },
+        { phrase: "Bad experience", count: 3 },
+        { phrase: "Terrible customer support", count: 10 },
+        { phrase: "Amazing quality", count: 6 },
+        { phrase: "Wonderful atmosphere", count: 8 },
+        { phrase: "Disappointing outcome", count: 4 },
+        { phrase: "Outstanding performance", count: 9 },
+        { phrase: "Fast delivery", count: 7 },
+        { phrase: "Friendly staff", count: 6 },
+        { phrase: "Prompt response", count: 5 },
+        { phrase: "Efficient service", count: 6 },
+        { phrase: "Highly recommended", count: 2 },
+        { phrase: "Top-notch quality", count: 8 },
+        { phrase: "Great value for money", count: 7 },
+        { phrase: "Satisfying experience", count: 6 },
+        { phrase: "Exceptional customer service", count: 3 },
+        { phrase: "Reliable and trustworthy", count: 2 },
+        { phrase: "Smooth transaction", count: 1 },
+        { phrase: "Excellent communication", count: 3 },
+        { phrase: "Well-packaged", count: 5 },
+        { phrase: "Beautifully crafted", count: 6 },
+        { phrase: "Timely updates", count: 5 },
+        { phrase: "Fantastic experience", count: 9 },
+        { phrase: "Exceptional quality", count: 9 }
+    ];
+
+    // Calculate dynamic width and height based on available space
+    var containerWidth = document.getElementById("wordcloud").offsetWidth;
+    var containerHeight = document.getElementById("wordcloud").offsetHeight;
+
+    // Set up the SVG container
+    var svg = d3.select("#wordcloud")
+        .append("svg")
+        .attr("width", containerWidth)
+        .attr("height", containerHeight);
+
+    // Create the word cloud layout
+    var layout = d3.layout.cloud()
+        .size([containerWidth, containerHeight])
+        .words(data.map(function (d) { return { text: d.phrase, size: d.count }; }))
+        .padding(5)
+        .rotate(function () { return ~~(Math.random() * 2) * 90; })
+        .fontSize(function (d) { return d.size * 20; })
+        .on("end", draw);
+
+    // Start the layout
+    layout.start();
+
+    // Draw the word cloud
+    function draw(words) {
+        svg.append("g")
+            .attr("transform", "translate(" + containerWidth / 2 + "," + containerHeight / 2 + ")")
+            .selectAll("text")
+            .data(words)
+            .enter().append("text")
+            .style("font-size", function (d) { return d.size + "px"; })
+            .style("fill", function (_, i) { return d3.schemeCategory10[i % 10]; })
+            .attr("text-anchor", "middle")
+            .attr("transform", function (d) {
+                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+            .text(function (d) { return d.text; });
+    }
+</script> -->
