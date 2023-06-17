@@ -21,6 +21,8 @@ import { SmsComponent } from './pages/sms/sms.component';
 import { CoHeaderComponent } from './components/co/co-header/co-header.component';
 import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
+import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
+import { BoHeaderComponent } from './components/bo-header/bo-header.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart
     CoHeaderComponent,
     CoSentimentComponent,
     AgeBarChartComponent,
+    BoAvgOrderChartComponent,
+    BoHeaderComponent,
   ],
   imports: [
     CommonModule,
