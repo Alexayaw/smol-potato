@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GenderDonutComponent } from './gender-donut.component';
+import { GenderPieComponent } from './gender-pie.component';
 
 describe('GenderDonutComponent', () => {
-  let component: GenderDonutComponent;
-  let fixture: ComponentFixture<GenderDonutComponent>;
+  let component: GenderPieComponent;
+  let fixture: ComponentFixture<GenderPieComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenderDonutComponent ]
+      declarations: [ GenderPieComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GenderDonutComponent);
+    fixture = TestBed.createComponent(GenderPieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

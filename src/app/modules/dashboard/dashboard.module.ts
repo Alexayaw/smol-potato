@@ -23,8 +23,8 @@ import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.
 import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
 import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
-import { GenderDonutComponent } from './components/customerProfile/gender-donut/gender-donut.component';
-import { TopCustomerComponent } from './components/customerprofile/top-customer/top-customer.component';
+import { GenderPieComponent } from './components/customerProfile/gender-donut/gender-pie.component';
+import { TopCustomerComponent } from './components/customerProfile/top-customer/top-customer.component';
 import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
 import { BoHeaderComponent } from './components/bo-header/bo-header.component';
 @NgModule({
@@ -45,7 +45,7 @@ import { BoHeaderComponent } from './components/bo-header/bo-header.component';
     CoSentimentComponent,
     AgeBarChartComponent,
     AvgCusPmComponent,
-    GenderDonutComponent,
+    GenderPieComponent,
     TopCustomerComponent,
     BoAvgOrderChartComponent,
     BoHeaderComponent,

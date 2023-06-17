@@ -25,6 +25,7 @@ export class AgeBarChartComponent {
       chart: {
         type: 'bar',
         width: '100%',
+        height: 200,
       },
       series: [
         {
