@@ -20,10 +20,13 @@ import { CoComponent } from './pages/co/co.component';
 import { SmsComponent } from './pages/sms/sms.component';
 import { CoHeaderComponent } from './components/co/co-header/co-header.component';
 import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
+import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
+import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
+import { GenderDonutComponent } from './components/customerProfile/gender-donut/gender-donut.component';
+import { TopCustomerComponent } from './components/customerprofile/top-customer/top-customer.component';
 import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
 import { BoHeaderComponent } from './components/bo-header/bo-header.component';
-
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -38,8 +41,12 @@ import { BoHeaderComponent } from './components/bo-header/bo-header.component';
     CpComponent,
     CoComponent,
     CoHeaderComponent,
+    CoWordcloudComponent,
     CoSentimentComponent,
     AgeBarChartComponent,
+    AvgCusPmComponent,
+    GenderDonutComponent,
+    TopCustomerComponent,
     BoAvgOrderChartComponent,
     BoHeaderComponent,
   ],
