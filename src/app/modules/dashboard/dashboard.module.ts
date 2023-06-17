@@ -24,6 +24,7 @@ import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
 import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
 import { GenderDonutComponent } from './components/customerProfile/gender-donut/gender-donut.component';
+import { TopCustomerComponent } from './components/customerprofile/top-customer/top-customer.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { GenderDonutComponent } from './components/customerProfile/gender-donut/
     AgeBarChartComponent,
     AvgCusPmComponent,
     GenderDonutComponent,
+    TopCustomerComponent,
   ],
   imports: [
     CommonModule,

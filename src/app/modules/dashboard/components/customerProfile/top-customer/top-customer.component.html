@@ -1,0 +1,31 @@
+<div class="flex-col rounded-lg bg-white px-8 py-8 dark:bg-night-700 sm:flex-row">
+    <div class="mb-2 flex items-center justify-between">
+        <div class="flex-col">
+            <div class="flex items-center space-x-1">
+                <span class="text-4xl font-semibold text-gray-900 dark:text-white">Top Customer (RM Spent)</span>
+            </div>
+
+        </div>
+        <div
+            class="cursor-pointer rounded-sm bg-gray-100 px-1 py-1 text-center text-xs text-gray-500 hover:bg-primary-500/25 hover:text-primary-500 dark:bg-night-500 dark:text-night-300 dark:hover:bg-primary-500/25 dark:hover:text-primary-500">
+            <svg-icon src="assets/icons/outline/dots-horizontal.svg" [svgClass]="'h-3 w-3'"></svg-icon>
+        </div>
+    </div>
+<apx-chart
+[series]="chartOptions.series!"
+[chart]="chartOptions.chart!"
+[legend]="chartOptions.legend!"
+[dataLabels]="chartOptions.dataLabels!"
+[fill]="chartOptions.fill!"
+[stroke]="chartOptions.stroke!"
+[xaxis]="chartOptions.xaxis!"
+[yaxis]="chartOptions.yaxis!"
+[states]="chartOptions.states!"
+[tooltip]="chartOptions.tooltip!"
+[colors]="chartOptions.colors!"
+[grid]="chartOptions.grid!"
+[title]="chartOptions.title!"
+[plotOptions]="chartOptions.plotOptions!">
+</apx-chart>
+
+</div>
