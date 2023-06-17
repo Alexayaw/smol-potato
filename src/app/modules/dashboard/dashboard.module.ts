@@ -27,6 +27,7 @@ import { GenderPieComponent } from './components/customerProfile/gender-donut/ge
 import { TopCustomerComponent } from './components/customerProfile/top-customer/top-customer.component';
 import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
 import { BoHeaderComponent } from './components/bo-header/bo-header.component';
+import { CpHeaderComponent } from './components/cp-header/cp-header.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -49,6 +50,7 @@ import { BoHeaderComponent } from './components/bo-header/bo-header.component';
     TopCustomerComponent,
     BoAvgOrderChartComponent,
     BoHeaderComponent,
+    CpHeaderComponent,
   ],
   imports: [
     CommonModule,
