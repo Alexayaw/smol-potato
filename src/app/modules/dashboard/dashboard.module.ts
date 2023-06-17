@@ -18,6 +18,8 @@ import { BoComponent } from './pages/bo/bo.component';
 import { CpComponent } from './pages/cp/cp.component';
 import { CoComponent } from './pages/co/co.component';
 import { SmsComponent } from './pages/sms/sms.component';
+import { CoHeaderComponent } from './components/co/co-header/co-header.component';
+import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { SmsComponent } from './pages/sms/sms.component';
     BoComponent,
     CpComponent,
     CoComponent,
+    CoHeaderComponent,
+    CoSentimentComponent,
   ],
   imports: [
     CommonModule,
