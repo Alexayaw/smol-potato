@@ -3,47 +3,107 @@
   <div class="mb-4">
     <h3 class="font-semibold text-gray-900 dark:text-white">Social Media Status</h3>
     <div class="space-x-1 text-xs font-medium text-gray-400 dark:text-night-300">
-    
+
       <span>Social Media Performance Analysis</span>
     </div>
   </div>
-  
+
   <!-- end Header -->
 
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-4">
-   
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Reach</div>
-     123
+
+    <div class="md:col-span-2 display-card">
+      <div class="flex">
+        <span class="chart-title">Reach</span>
+
+        <div class="text-sm  font-semibold  mx-4 py-1 pr-2 pl-1  flex rounded-lg bg-red-100 text-red-700">
+          <span class="text-sm material-icons-outlined">
+            arrow_downward
+          </span>
+          3.4%
+
+        </div>
+      </div>
+
+      <app-sms-reach-chart></app-sms-reach-chart>
     </div>
 
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Engagement</div>
-      <!-- put no of likes  -->
-     
-    </div>
-
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Follower Growth</div>
-      <!-- put line chart -->
-     
-    </div>
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Conversion Rate</div>
-     <!-- bar chart -->
-     
-    </div>
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Customer Acquisition Cost</div>
-      <!-- line chart -->
-     
-    </div>
-    <div class="md:col-span-2 flex h-[200px] flex-col rounded-lg bg-white p-8 dark:bg-night-700">
-      <div class="chart-title">Customer Lifetime Value</div>
-     <!-- line chart -->
-     
-    </div>
-
+    <div class="md:col-span-2 display-card">
   
+      <div class="chart-title">Engagement</div>
+      <!-- put no of likes,comments &share  -->
+      <app-sms-engagement></app-sms-engagement>
+   
+    </div>
+
+    <div class="md:col-span-2 display-card">
+      <div class="flex">
+        <div class="chart-title">Follower Growth</div>
+        <div class="text-sm  font-semibold  mx-4 py-1 pr-2 pl-1  flex rounded-lg bg-red-100 text-red-700">
+          <span class="text-sm material-icons-outlined">
+            arrow_downward
+          </span>
+          0.2%
+
+        </div>
+      </div>
+ 
+      <!-- put line chart -->
+      <app-follower-growth-chart class="mt-5"></app-follower-growth-chart>
+
+    </div>
+    <div class="md:col-span-2 display-card">
+      <div class="chart-title">Conversion Rate</div>
+    
+      <!-- bar chart -->
+      <div class="flex justify-center mt-5">
+        <div class="figures flex-basis-1/2">50.2%</div>
+        
+        
+        </div>
+        <div class="flex justify-center">
+          <div class="text-sm  font-semibold  mx-4 py-1 pr-2 pl-1  flex rounded-lg bg-green-500/25 text-green-700">
+            <span class="text-sm material-icons-outlined">
+              arrow_upward
+            </span>
+            0.2%
+    
+          </div>
+      </div>
+      
+   
+   
+    </div>
+    <div class="md:col-span-2 display-card">
+      <div class="flex">
+        <div class="chart-title">Customer Acquisition Cost</div>
+        <div class="text-sm  font-semibold  mx-4 py-1 pr-2 pl-1  flex rounded-lg bg-green-500/25 text-green-700">
+          <span class="text-sm material-icons-outlined">
+            arrow_downward
+          </span>
+          0.2%
+
+        </div>
+      </div>
+      <!-- line chart -->
+     <app-cus-aq-cost-chart class="mt-5" ></app-cus-aq-cost-chart>
+    </div>
+    <div class="md:col-span-2 display-card">
+      <div class="flex">
+        <div class="chart-title">Customer Lifetime Value</div>
+        <div class="text-sm  font-semibold  mx-4 py-1 pr-2 pl-1  flex rounded-lg bg-green-500/25 text-green-700">
+          <span class="text-sm material-icons-outlined">
+            arrow_upward
+          </span>
+          50.2%
+
+        </div>
+      </div>
+    
+      <!-- line chart -->
+<app-cus-lifetime-val-chart></app-cus-lifetime-val-chart>
+    </div>
+
+
   </div>
 </div>
