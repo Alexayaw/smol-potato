@@ -26,6 +26,7 @@ export class AvgCusPmComponent {
       chart: {
         type: 'line',
         width: '100%',
+        height: 200,
       },
       xaxis: {
         categories: acpmData.months

@@ -32,6 +32,7 @@ export class TopCustomerComponent {
     }],
       chart: {
       type: 'bar',
+      height: 250,
     },
     plotOptions: {
       bar: {

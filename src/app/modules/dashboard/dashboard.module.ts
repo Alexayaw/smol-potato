@@ -23,16 +23,10 @@ import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.
 import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
 import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
-import { GenderDonutComponent } from './components/customerProfile/gender-donut/gender-donut.component';
+import { GenderPieComponent } from './components/customerProfile/gender-donut/gender-pie.component';
 import { TopCustomerComponent } from './components/customerProfile/top-customer/top-customer.component';
 import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
 import { BoHeaderComponent } from './components/bo-header/bo-header.component';
-import { SmsReachChartComponent } from './components/sms/sms-reach-chart/sms-reach-chart.component';
-import { SmsEngagementComponent } from './components/sms/sms-engagement/sms-engagement.component';
-import { FollowerGrowthChartComponent } from './components/sms/follower-growth-chart/follower-growth-chart.component';
-import { ConversionRateChartComponent } from './components/sms/conversion-rate-chart/conversion-rate-chart.component';
-import { CusAqCostChartComponent } from './components/sms/cus-aq-cost-chart/cus-aq-cost-chart.component';
-import { CusLifetimeValChartComponent } from './components/sms/cus-lifetime-val-chart/cus-lifetime-val-chart.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -51,16 +45,10 @@ import { CusLifetimeValChartComponent } from './components/sms/cus-lifetime-val-
     CoSentimentComponent,
     AgeBarChartComponent,
     AvgCusPmComponent,
-    GenderDonutComponent,
+    GenderPieComponent,
     TopCustomerComponent,
     BoAvgOrderChartComponent,
     BoHeaderComponent,
-    SmsReachChartComponent,
-    SmsEngagementComponent,
-    FollowerGrowthChartComponent,
-    ConversionRateChartComponent,
-    CusAqCostChartComponent,
-    CusLifetimeValChartComponent,
   ],
   imports: [
     CommonModule,

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ChartOptions } from '../../../../../shared/models/chart-options';
 
 @Component({
-  selector: 'app-gender-donut',
-  templateUrl: './gender-donut.component.html',
-  styleUrls: ['./gender-donut.component.scss']
+  selector: 'app-gender-pie',
+  templateUrl: './gender-pie.component.html',
+  styleUrls: ['./gender-pie.component.scss']
 })
-export class GenderDonutComponent {
+export class GenderPieComponent {
   public chartOptions: Partial<ChartOptions>;
   public labels: string[];
   public series: number[];
@@ -58,7 +58,8 @@ export class GenderDonutComponent {
   
     this.chartOptions ={
       chart: {
-        type: "pie"
+        type: "pie",
+        height: 250,
       },
       responsive: [
         {
