@@ -22,7 +22,12 @@ import { CoHeaderComponent } from './components/co/co-header/co-header.component
 import { CoSentimentComponent } from './components/co/co-sentiment/co-sentiment.component';
 import { CoWordcloudComponent } from './components/co/co-wordcloud/co-wordcloud.component';
 import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart/age-bar-chart.component';
-
+import { AvgCusPmComponent } from './components/customerProfile/avg-cus-pm/avg-cus-pm.component';
+import { GenderPieComponent } from './components/customerProfile/gender-donut/gender-pie.component';
+import { TopCustomerComponent } from './components/customerProfile/top-customer/top-customer.component';
+import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
+import { BoHeaderComponent } from './components/bo-header/bo-header.component';
+import { CpHeaderComponent } from './components/cp-header/cp-header.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -40,6 +45,12 @@ import { AgeBarChartComponent } from './components/customerProfile/age-bar-chart
     CoWordcloudComponent,
     CoSentimentComponent,
     AgeBarChartComponent,
+    AvgCusPmComponent,
+    GenderPieComponent,
+    TopCustomerComponent,
+    BoAvgOrderChartComponent,
+    BoHeaderComponent,
+    CpHeaderComponent,
   ],
   imports: [
     CommonModule,
