@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SmsComponent } from './sms.component';
 
-describe('NftComponent', () => {
+describe('SmsComponent', () => {
   let component: SmsComponent;
   let fixture: ComponentFixture<SmsComponent>;
 

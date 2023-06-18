@@ -33,6 +33,11 @@ import { FollowerGrowthChartComponent } from './components/sms/follower-growth-c
 import { ConversionRateChartComponent } from './components/sms/conversion-rate-chart/conversion-rate-chart.component';
 import { CusAqCostChartComponent } from './components/sms/cus-aq-cost-chart/cus-aq-cost-chart.component';
 import { CusLifetimeValChartComponent } from './components/sms/cus-lifetime-val-chart/cus-lifetime-val-chart.component';
+import { GenderPieComponent } from './components/customerProfile/gender-donut/gender-pie.component';
+import { TopCustomerComponent } from './components/customerProfile/top-customer/top-customer.component';
+import { BoAvgOrderChartComponent } from './components/bo-avg-order-chart/bo-avg-order-chart.component';
+import { BoHeaderComponent } from './components/bo-header/bo-header.component';
+import { CpHeaderComponent } from './components/cp-header/cp-header.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -51,7 +56,7 @@ import { CusLifetimeValChartComponent } from './components/sms/cus-lifetime-val-
     CoSentimentComponent,
     AgeBarChartComponent,
     AvgCusPmComponent,
-    GenderDonutComponent,
+    GenderPieComponent,
     TopCustomerComponent,
     BoAvgOrderChartComponent,
     BoHeaderComponent,
@@ -61,6 +66,7 @@ import { CusLifetimeValChartComponent } from './components/sms/cus-lifetime-val-
     ConversionRateChartComponent,
     CusAqCostChartComponent,
     CusLifetimeValChartComponent,
+    CpHeaderComponent,
   ],
   imports: [
     CommonModule,
